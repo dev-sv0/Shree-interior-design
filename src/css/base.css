@@ -1,0 +1,153 @@
+body {
+      font-family: verdana, sans-serif;
+      line-height: 1.8;
+      color: #805a3b;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #c60000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+     
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fef2e4 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #c60000 !important;
+      background-color: #fef2e4 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fef2e4 !important;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus .icon-bar, 
+.navbar-default .navbar-toggle:hover .icon-bar {
+ background-color: #c60000;
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: #fef2e4;
+}
+
+  footer .glyphicon {
+      font-size: 50px;
+	margin: 10px 0px;
+      color: #c60000;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+.content{background-color: rgba(0,0,0,0.3); /* background-color: #fff; */ margin-top:10%; color: #fff; transition: all .2s ease-in; padding: 25px;}  
+.content.slideanim:hover { transform: scale(1.1); }
+.content h2,  
+.content h4{color: #fff;}  
+.content .glyphicon{font-size: 25px;padding: 0px 10px 0px 0px;vertical-align: top;}  
+  .home .content	 .glyphicon {
+      font-size: 50px;
+	margin: 10px 0px;
+      color: #fff;
+  }
+.home .content{background-color: transparent;}  
+.background-bg{
+	position: relative;
+	height: 800px;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	/* background-attachment: fixed; */
+	background-attachment: scroll;
+	background-color: #805a3b;
+}
+.home .background-bg{background-color: #805a3b;}
+.about .background-bg{background-color: #c60000;}
+.services .background-bg{background-color: #fd974f; background-position: left top;}
+.projects .background-bg{background-color: #fef2e4; background-position: right top;}
+.contact .background-bg{ background-color: #805a3b; background-position: 80% top;}
+
+.home .container{position: relative;top: 10%;}
+.home h2{color: #fff;}
+.projects h4{margin: 20px 0px 0px 0px;}
+.footer{background-color: #fef2e4;}
+
+.desktop{display:block !important;}
+.mobile{display:none !important; }
+
+.icon-arrow{ position :relative;
+    -webkit-animation: moveArrow 1s infinite ease-in-out; /* Safari 4.0 - 8.0 */
+    animation: moveArrow 1s infinite ease-in-out;
+
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes moveArrow {
+    0% {top: 0px;}
+    25% {top: 10px;}
+    50% {top: 20px;}
+    75% {top: 10px;}
+    100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes moveArrow {
+     0% {top: 0px;}
+    25% {top: 10px;}
+    50% {top: 20px;}
+    75% {top: 10px;}
+    100% {top: 0px;}
+}
+  @media screen and (max-width: 768px) {
+  .desktop{display:none !important;}
+	.mobile{display:block !important;}
+    .navbar-brand{padding:0px 10px;}
+	.home-logo{width: 200px;}
+  }
